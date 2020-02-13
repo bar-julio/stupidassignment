@@ -22,7 +22,12 @@
        "alt" => "keväinen maisema")
   );
 
-  <img src= "echo $kuvat[rand(0,3)]["alt"]">
+  $rando=rand(0,3);
+  $src = $kuvat[$rando]["imgsrc"];
+  $alt = $kuvat[$rando]["alt"];
+  echo  "<img src=" . $src . " alt=" .  $alt . ">"; 
+
+?>
 
 
 
